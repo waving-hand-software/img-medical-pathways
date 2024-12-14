@@ -7,7 +7,7 @@ flowchart TD
     MCCQE1 -->LANG["<b>Language Assessment</b><br/><u>IELTS (Academic)</u><br/>• Minimum 7.0 in each band<br/>• Speaking • Listening • Reading • Writing<br/>• Fee: $350-400<br/><br/><u>TOEFL iBT</u><br/>• Minimum 95 overall<br/>• Speaking minimum: 24<br/>• Fee: $300-375<br/><i>Valid for 24 months</i>"]
     LANG -->LOR["<b>Letters of Reference</b><br/>• 3-4 recent clinical references<br/>• Licensed physicians only<br/>• Maximum 2 years old<br/>• Must include direct patient care<br/>• Clinical competency assessment<br/>• Professional conduct evaluation"]
     LOR -->NACOSCE["<b>NAC OSCE</b><br/>• 12 clinical stations<br/>• 11 min/station + 4 min prep<br/>• Pass Rate: 60-70% for IMGs<br/>• Fee: $2,945 (2024)<br/><br/><i>Major test centers:<br/>Toronto • Vancouver • Montreal</i>"]
-    NACOSCE -->CASPER["<b>Casper Assessment</b><br/>• 90-minute online test<br/>• Situational judgment scenarios<br/>• Required for CaRMS<br/>• Fee: $85<br/><i>Available worldwide</i>"]
+    NACOSCE -->CASPER["<b>Casper Assessment</b><br/>• 90-minute online test<br/>• Situational judgment scenarios<br/>• Required for CaRMS in some Provinces<br/>• Fee: $85<br/><i>Available worldwide</i>"]
     CASPER -->TDM["<b>TDM Test</b><br/>• Technical & Decision Making<br/>• Required by select programs<br/>• Fee: $250<br/>• Online format"]
     TDM -->PathChoice{Choose Pathway}
 
