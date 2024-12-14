@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     Start["🔄 International Medical Graduate<br/><i>Starting Your Canadian or US Medical Journey</i>"]
 
@@ -54,3 +55,4 @@ flowchart TD
     class PathChoice,CrossUS,CrossCan decision
     class CanLicense,CanLicense2,CanLicense3,USLicense,DualLicense endpoint
     class CA,FMRes,PRA,USRes paid
+```
