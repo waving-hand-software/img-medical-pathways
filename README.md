@@ -52,16 +52,28 @@ flowchart TD
 
 
   MCCQE1 --> |Approved Jurisdiction GP Route| ApprovedGP["
-  <table border=1 style='border-collapse:collapse;'>
-    <tr><th>Country</th><th>Credential</th><th>Language Requirement</th></tr>
-    <tr><td>UK</td><td>MRCGP</td><td>English waived</td></tr>
-    <tr><td>Ireland</td><td>MICGP</td><td>English generally met</td></tr>
-    <tr><td>New Zealand</td><td>FRNZCGP</td><td>English waived</td></tr>
-    <tr><td>Australia</td><td>FRACGP/FACRRM</td><td>English waived</td></tr>
-    <tr><td>Switzerland</td><td>Swiss Board Cert. in GP</td><td>English/French required if not trained in these languages</td></tr>
+    <table border=1 style='border-collapse:collapse;'>
+      <tr><th>Country</th><th>Recognized GP Credential</th><th>Language Requirement</th></tr>
+      <tr><td>United Kingdom (UK)</td><td>MRCGP (Membership of the Royal College of General Practitioners)</td><td>English requirement typically waived due to English-language training</td></tr>
+      <tr><td>Ireland</td><td>MICGP (Membership of the Irish College of General Practitioners)</td><td>Generally no separate English test needed (training conducted in English)</td></tr>
+      <tr><td>New Zealand</td><td>FRNZCGP (Fellowship of the Royal New Zealand College of General Practitioners)</td><td>English requirement usually waived (English-language training environment)</td></tr>
+      <tr><td>Australia</td><td>FRACGP (Fellowship of the Royal Australian College of General Practitioners) or FACRRM (Fellowship of the Australian College of Rural and Remote Medicine)</td><td>English requirement waived (English-language training)</td></tr>
+      <tr><td>Switzerland</td><td>Swiss Board Certification in General Practice (recognized by Swiss authorities)</td><td>If training not in English or French, may require language proof</td></tr>
     </table>
-  "] 
+    <br/>
+    <a href='https://www.royalcollege.ca/en/eligibility-and-exams/exam-eligibility/approved-jurisdiction-route/approved-jurisdictions.html' target='_blank'>royalcollege approved jurisdictions</a>
+    <br/>
+    <table border=1 style='border-collapse:collapse;'>
+      <tr><th>Country</th><th>Length of GP Training</th><th>Approx. IMG Acceptance Rate</th><th>Fees</th><th>Major Application Dates</th></tr>
+      <tr><td>UK</td><td>3-4 yrs</td><td>~50-60% IMGs into GP training</td><td>Exam fees ~£1,000-2,000</td><td>Recruitment rounds: Feb & Aug intakes</td></tr>
+      <tr><td>Ireland</td><td>4 yrs</td><td>~40-50% IMGs</td><td>Exam fees ~€1,500-2,500</td><td>Annual intake: Applications usually close in Oct, Start in July</td></tr>
+      <tr><td>New Zealand</td><td>3 yrs</td><td>~30-40% IMGs</td><td>NZD$3,000-5,000 (exams)</td><td>Applications late year, Start following year</td></tr>
+      <tr><td>Australia</td><td>3 yrs</td><td>~40-50% IMGs</td><td>AUD$4,000-5,000 (exams)</td><td>Twice yearly exams (Feb & Aug)</td></tr>
+      <tr><td>Switzerland</td><td>5-6 yrs</td><td>~20-30% IMGs</td><td>CHF 2,000-4,000</td><td>Rolling admissions</td></tr>
+    </table>
+      "] 
   ApprovedGP --> |Some provinces do not require MCCQE I| CFPC2
+
 
     %% PRA Route (Alternate Canada)
     MCCQE1 -->|PRA Route| PRA["<b>PRA-Compatible Programs</b><br/>Provincial Assessments:<br/>ON: PEAP; BC: BC PRA; AB: AIMG; QC: IMG<br/>Cost: ~$6,500-$9,000/yr<br/>Duration: 18-24 mos"]
