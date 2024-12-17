@@ -77,7 +77,7 @@ flowchart TD
 
     %% PRA Route (Alternate Canada)
     MCCQE1 -->|PRA Route| PRA["<b>PRA-Compatible Programs</b><br/>Provincial Assessments:<br/>ON: PEAP; BC: BC PRA; AB: AIMG; QC: IMG<br/>Cost: ~$6,500-$9,000/yr<br/>Duration: 18-24 mos"]
-    PRA --> NACPRA["<b>NAC-PRA Assessment</b><br/>• Clinical Skills Eval<br/>• Pass ~65%<br/>• Fee: ~$2,500"]
+    PRA -->|Some Provinces do not require NAC-PRA| NACPRA["<b>NAC-PRA Assessment</b><br/>• Clinical Skills Eval<br/>• Pass ~65%<br/>• Fee: ~$2,500"]
     NACPRA --> Clinical["<b>3-Mo Clinical Assessment</b><br/>Fee: ~$10-15K<br/>Supervisor Evaluation"]
     Clinical --> ProvLicense["<b>Provisional License</b><br/>Duration: 3-24 mos<br/>Periodic Assessments"]
     ProvLicense --> CFPC2["<b>CFPC Certification</b><br/>• without additional examinations"]
