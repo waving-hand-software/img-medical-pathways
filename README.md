@@ -17,8 +17,7 @@ flowchart TD
     MCCQE1 --> LANG["<b>Language Assessment</b><br/><u>IELTS Academic</u>: ≥7.0 each band<br/><u>TOEFL iBT</u>: ≥95 overall<br/>Fee: ~$300-400<br/><i>Valid ~24 months</i>"]
     LANG --> LOR["<b>Letters of Reference</b><br/>• 3-4 from licensed physicians<br/>• Recent (≤2 yrs)<br/>• Direct patient care<br/>• Professional conduct & competency"]
     LOR --> NACOSCE["<b>NAC OSCE</b><br/>• ~12 stations<br/>• Pass Rate: ~60-70% IMGs<br/>• Fee: ~$2,995 (2024)<br/><i>Centers: Toronto, Vancouver, Montreal</i>"]
-    NACOSCE --> FMPROC["<b>FMPROC Exam</b><br/>• During residency<br/>• Pass: ~85%<br/>• Fee: ~$750"]
-    FMPROC --> TDM["<b>TDM Test</b><br/>• Technical & Decision-Making<br/>• Fee: ~$250<br/>Online Format"]
+    NACOSCE -->  TDM["<b>TDM Test</b><br/>• Technical & Decision-Making<br/>• Fee: ~$250<br/>Online Format"]
     TDM -->  CASPER["<b>Casper Assessment</b><br/>• ~90-min online<br/>• Situational judgment<br/>• Fee: ~$85<br/>Required by some CaRMS programs"]
     CASPER --> CanadaRoute{Select Your Canadian Route}
 
@@ -47,15 +46,30 @@ flowchart TD
     <br/><a href='https://www.carms.ca/pdfs/carms-forum-2024.pdf' target='_blank'>CaRMS.ca/pdfs/carms-forum-2024.pdf</a>
     "]
     ProvData --> FMRes["<b>Family Medicine Residency (Canada)</b><br/>• 2-Yr Program<br/>• Salary: ~$60-75K/yr<br/>• Starts in July"]
-    FMRes --> CFPC["<b>CFPC Certification</b><br/>• End of residency exam<br/>• Pass: >90%<br/>• Fee: ~$4,990 (2024)<br/>Full Practice"]
+    FMRes --> FMPROC["<b>FMPROC Exam</b><br/>• During residency<br/>• Pass: ~85%<br/>• Fee: ~$750"]
+    FMPROC --> CFPC["<b>CFPC Certification</b><br/>• End of residency exam<br/>• Pass: >90%<br/>• Fee: ~$4,990 (2024)<br/>Full Practice"]
     CFPC --> CanLicense["🍁 <b> Canadian License</b>"]
+
+
+  MCCQE1 --> |Approved Jurisdiction GP Route| ApprovedGP["
+  <table border=1 style='border-collapse:collapse;'>
+    <tr><th>Country</th><th>Credential</th><th>Language Requirement</th></tr>
+    <tr><td>UK</td><td>MRCGP</td><td>English waived</td></tr>
+    <tr><td>Ireland</td><td>MICGP</td><td>English generally met</td></tr>
+    <tr><td>New Zealand</td><td>FRNZCGP</td><td>English waived</td></tr>
+    <tr><td>Australia</td><td>FRACGP/FACRRM</td><td>English waived</td></tr>
+    <tr><td>Switzerland</td><td>Swiss Board Cert. in GP</td><td>English/French required if not trained in these languages</td></tr>
+    </table>
+  "] 
+  ApprovedGP --> |Some provinces do not require MCCQE I| CFPC2
 
     %% PRA Route (Alternate Canada)
     MCCQE1 -->|PRA Route| PRA["<b>PRA-Compatible Programs</b><br/>Provincial Assessments:<br/>ON: PEAP; BC: BC PRA; AB: AIMG; QC: IMG<br/>Cost: ~$6,500-$9,000/yr<br/>Duration: 18-24 mos"]
     PRA --> NACPRA["<b>NAC-PRA Assessment</b><br/>• Clinical Skills Eval<br/>• Pass ~65%<br/>• Fee: ~$2,500"]
     NACPRA --> Clinical["<b>3-Mo Clinical Assessment</b><br/>Fee: ~$10-15K<br/>Supervisor Evaluation"]
     Clinical --> ProvLicense["<b>Provisional License</b><br/>Duration: 3-24 mos<br/>Periodic Assessments"]
-    ProvLicense --> CanLicense2["🍁 <b> Canadian License</b>"]
+    ProvLicense --> CFPC2["<b>CFPC Certification</b><br/>• without additional examinations"]
+    CFPC2 --> CanLicense2["🍁 <b> Canadian License</b>"]
 
     %% US Main Path
     PathChoice -->|US| USMLE1["<b>USMLE Step 1</b><br/>• Pass/Fail<br/>• ~8-hour exam<br/>• Pass ~80-85% IMGs<br/>• Fee: ~$1,000"]
@@ -94,7 +108,7 @@ flowchart TD
 
 
     %% Final class assignments
-    class CanLicense,CanLicense2,CanLicense3,USLicense,DualLicense endpoint
+    class CanLicense,CanLicense2,CanLicense3,CanLicense4,USLicense,DualLicense endpoint
     class USRes,ProvData warn
     class CA,FMRes,PRA paid
 ```
